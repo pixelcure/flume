@@ -1,0 +1,46 @@
+ <% _.forEach(venues, function(venue) { %>
+<section class="venue <%= venue.venue %> overflow hidden">
+    
+    <section class="venue-info">
+        <h2><%= venue.venue %></h2>
+        <span class="location">
+            <%= venue.city %> <%= venue.state %>
+        </span>
+        <span class="phone-number">
+            <%= venue.phoneNumber %>
+        </span>
+        <a href="<%= venue.website %>" title="<%= venue.venue %>">
+            Website
+        </a>
+    </section><!-- / end venue info -->
+    
+    <h2 class="venue-availability">
+        Venue Availability
+    </h2>
+    <section class="event-availability">
+        <%= venue.venueData %>
+    </section><!-- / end venue availabity --> 
+
+    <h2 class="venue-summary">A little about the venue...</h3>
+    <section class="venue-summary">
+        <p><%= venue.summary %></p>
+    </section><!-- / end venue summary -->
+    
+    <h2 class="venue-contact">Venue Contact</h2>
+    <section class="venue-contact">    
+        <ul class="venue" style="width:50%;">
+            <li class="venue-contact">
+                <span><%= venue.firstName %> <%= venue.lastName %></span>
+                <span class="title"><em>Some Title</em></span>
+            </li>
+            <li class="address">
+                <span><%= venue.address %></span>
+            </li>
+            <li class="city-state-zip">
+                <span><%= venue.city %>, <%= venue.state %>, <%= venue.zip %></span>
+            </li>
+        </ul>
+    </section><!-- / end venue contact -->
+
+</section><!-- / end vendor -->
+<% }); %>
