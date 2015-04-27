@@ -95,7 +95,7 @@ define([
             // Build Array of Available Dates
             $('.venue-signUp').find('.venue-dates input.date').each(function(){                
                 // Add date to Array
-                eventDatesList.push( $(this).val() )
+                eventDatesList.push( $(this).val() );
             });
 
             // New Venue Data

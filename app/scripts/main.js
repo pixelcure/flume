@@ -81,8 +81,8 @@ require([
         venuesList.render({collection : venues}).el;
 
         venues.on('change', function(){
-            alert('change!');
-        })
+           // Change
+        });
 
 
     }) // End Doc Ready  
