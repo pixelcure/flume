@@ -24,8 +24,12 @@ define([
 			zip : '',
 			venue : '',
 			website : '',
+			capacity : '',
+			ageRestriction : '',
 			eventDates : [],
-			summary : ''
+			summary : '',
+			reviews : [],
+			venueImages : []
 		},
 		urlRoot : '/venue'
 	});

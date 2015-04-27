@@ -110,6 +110,8 @@ define([
                 zip : $('.venue-signUp').find('input[name="zip"]').val(),
                 latLng : {},
                 website : $('.venue-signUp').find('input[name="venueWebsite"]').val(),
+                capacity : $('.venue-signUp').find('input[name="venueCapacity"]').val(),
+                ageRestriction : $('.venue-signUp').find('select[name="venuevenueAgeRestrictions"]').val(),
                 eventDates : eventDatesList,
                 summary : $('.venue-signUp').find('textarea[name="venueSummary"]').val()
             };
