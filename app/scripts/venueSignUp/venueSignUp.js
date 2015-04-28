@@ -34,7 +34,7 @@ define([
 
         // Init
         initialize: function() {
-            this.listenTo(this.collection, 'add', this.addNewVenue);
+           this.listenTo(this.collection, 'add', this.addNewVenue);
         },
 
         // Render Venue Form
@@ -102,6 +102,7 @@ define([
             var newVenue = {
                 firstName : $('.venue-signUp').find('input[name="firstName"]').val(),
                 lastName : $('.venue-signUp').find('input[name="lastName"]').val(),
+                venue : $('.venue-signUp').find('input[name="venueName"]').val(),
                 email : $('.venue-signUp').find('input[name="email"]').val(),
                 phoneNumber : $('.venue-signUp').find('input[name="phoneNumber"]').val(),
                 address : $('.venue-signUp').find('input[name="address"]').val(),
@@ -111,16 +112,13 @@ define([
                 latLng : {},
                 website : $('.venue-signUp').find('input[name="venueWebsite"]').val(),
                 capacity : $('.venue-signUp').find('input[name="venueCapacity"]').val(),
-                ageRestriction : $('.venue-signUp').find('select[name="venuevenueAgeRestrictions"]').val(),
+                ageRestriction : $('.venue-signUp').find('select[name="venueAgeRestrictions"]').val(),
                 eventDates : eventDatesList,
                 summary : $('.venue-signUp').find('textarea[name="venueSummary"]').val()
             };
             
             // Add New Venue to Collection
             this.collection.add(newVenue);
-            
-            // Reset Collection
-            this.collection.reset();
 
         },
 

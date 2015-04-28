@@ -22,6 +22,7 @@ define([
 			city : '',
 			state : '',
 			zip : '',
+			latLng : {},
 			venue : '',
 			website : '',
 			capacity : '',
